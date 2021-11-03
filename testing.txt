@@ -32,3 +32,31 @@ public class SeleniumBasicScript {
     }
  
 }
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+import java.util.concurrent.TimeUnit;
+
+import org.openqa.selenium.By;  
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+  
+
+/* Get URL
+ * Get title
+ * Get length of title
+ * Get current URl and assert it
+ * Get pagesource and it's length*/
+
+public class SeleniumSecondScript {  
+  
+    public static void main(String[] args) {  
+          
+          // System Property for chrome Driver   
+        System.setProperty("webdriver.chrome.driver", "D:\\Training\\Selenium\\chromedriver.exe");  
+		
+        // Create a new instance of the Chrome driver 
+		WebDriver driver = new ChromeDriver(); 
+		    
+		// Storing the Application Url in the String variable 
+		String url = "https://rahulshettyacademy.com"; 
